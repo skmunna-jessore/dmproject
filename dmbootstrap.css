@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:  rgb(235,237,244);
+}
+.col-1{
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+ .col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+[class*='col-']{
+    float: left;
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/* *********menu statr */
+.menu-hg{
+    height: 55px;
+    background: black;
+   justify-content: center;
+}
+
+.menu-hg>img{
+    height: 100%;
+    width: 300px;
+}
+
+
+.menu-hg1{
+    height: 55px;
+    background: black;
+    text-align: right;
+}
+.menu-hg2{
+    height: 55px;
+    background: black;
+}
+.menu-hg3{
+    height: 50px;
+    background: rgb(221, 218, 218);
+    border-bottom: 1px solid rgb(179, 184, 183);
+    position: relative;
+}
+.shape{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: rgb(221, 218, 218);
+    border: 1px solid rgb(221, 218, 218);
+    transform: rotate(45deg);
+    top: -7.7px;
+    left: 230px;
+    border-right: none;
+    border-bottom: none;
+}
+.menu-hg3 .shape-1{
+    position:absolute;
+    width: 140px;
+    height: 48px;
+    color: white;
+    background: rgb(56, 54, 54);
+    border: 1px solid rgb(56, 54, 54);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(8, 0, 0, 0.836) 0px 5px 15px;
+    top: -30px;
+    left: 40px;
+}
+
+.menu-hg1 ul,
+.menu-hg2 ul,
+.menu-hg3 ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menu-hg1 ul li,
+.menu-hg2 ul li{
+    margin: 15px 15px 8px 0;
+   padding:0 10px;
+}
+.menu-hg3 ul li{
+    margin: 15px 5px 8px 0;
+    padding: 0 5px;
+}
+.menu-hg1 ul li a,
+.menu-hg2 ul li a{
+    text-decoration: none;
+    color:rgb(180, 180, 178)
+}
+.menu-hg3 ul li a{
+    text-decoration: none;
+    color:black
+}
+.menu-hg1 ul li a:hover,
+.menu-hg2 ul li a:hover{
+    color:white
+}
+
+.menu-hg3 ul li a:hover{
+    color:rgb(247, 247, 248);
+    background-color: rgba(100, 95, 95, 0.466);
+    transition:0.1s;
+    padding-block: 10px;
+    border-radius: 2.5px;
+
+}
+
+.contentwd1,
+.contentwd2{
+    height: 350px;
+    top: 50px;
+}
+.contentwd1 .shape-2{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+.contentwd1 .shape-2 >h1{
+    font-size: 33px;
+    font-weight: 200;
+    font: larger;
+    text-align: justify;
+}
+.contentwd1 .shape-2 >p{
+    font-size: 21px;
+    font-weight: 200;
+    font: larger;
+    text-align: justify;
+}
+
+.contentwd2>img{
+    margin-top: 98px;
+    width: 90%;
+    mix-blend-mode: multiply;
+}
+
+.cetorybttn>input[type="button"]{
+    width: 12%;
+    margin-top:10px;
+    margin-left: 43.5%;
+    border-radius: 15px;
+}
